@@ -7,6 +7,6 @@ RUN mkdir -p ~/bin && cp ./aws-iam-authenticator /usr/local/bin/aws-iam-authenti
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 RUN chmod +x ./kubectl
 RUN mv ./kubectl /usr/local/bin/kubectl
-RUN curl -o helm.tar.gz https://storage.googleapis.com/kubernetes-helm/helm-v2.14.0-linux-amd64.tar.gz; tar -xzf helm.tar.gz
+RUN curl -o helm.tar.gz https://storage.googleapis.com/kubernetes-helm/helm-v3.11.0-linux-amd64.tar.gz; tar -xzf helm.tar.gz
 RUN chmod +x ./linux-amd64/helm
 RUN mv ./linux-amd64/helm /usr/local/bin/helm
