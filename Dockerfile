@@ -1,6 +1,7 @@
 FROM amazonlinux:latest
 
 #Install tools inc awscli (used for kubeconfig generation)
+RUN yum update -y
 RUN yum install -y tar gzip awscli
 
 #aws-iam-authenticator; used for k8s authentication
