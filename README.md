@@ -1,4 +1,4 @@
-## eks-helm-docker
+## cicd-helm
 
 An example container image that has the following installed:
 
